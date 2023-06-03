@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service AudioServer {
+
+    rpc connect (Empty) returns (stream AudioData);
+
+}
+
+message Empty {}
+
+message AudioData {}
