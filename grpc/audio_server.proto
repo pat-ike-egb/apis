@@ -6,4 +6,6 @@ service AudioServer {
 
 message ConnectRequest {}
 
-message AudioData {}
+message AudioData {
+    bytes data = 1;
+}
